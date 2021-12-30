@@ -30,7 +30,7 @@ cv2.imshow ('img Rectangle', imageRectangle)
 
 # 파일 위에 글자 삽입
 imageText = image.copy()
-cv2.putText(imageText, 'Mark, jerker bug.', (205,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (77,177,13), 2)
+cv2.putText(imageText, 'Mark Zuckerberg.', (205,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (77,177,13), 2)
 cv2.imshow('text', imageText)
 
 cv2.waitKey(0)

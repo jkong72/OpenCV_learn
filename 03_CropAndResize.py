@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 이미지의 컬러 정보를 가져온다.
-source = cv2.imread('data/imges/sample.jpg', 1) # 인자를 1로 해도 컬러 정보를 가져온다.
+source = cv2.imread('data/images/sample.jpg', 1) # 인자를 1로 해도 컬러 정보를 가져온다.
 
 print (cv2.IMREAD_COLOR) # 실제로 인자 자체가 1의 값을 갖는것을 알 수 있다.
 
@@ -15,7 +15,7 @@ scaleX = 0.8
 scaleY = 0.6
 
 scaleDown = cv2.resize(source, None, fx=scaleX, fy=scaleY, interpolation=cv2.INTER_LINEAR)
-#interpolation은 사이즈가 변하면서(주로 커지면서) 생기는 공백을 채우는 방법론을 지정하는 파라미터
+#interpolation은 사이즈가 변하면서(주로 커지면서) 생기는 공백을 채우는 방법론(보정법)을 지정하는 파라미터
 
 print (scaleDown)
 

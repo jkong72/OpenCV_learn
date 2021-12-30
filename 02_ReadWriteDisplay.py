@@ -24,11 +24,12 @@ cv2.imshow('color', image) # 이미지를 표시하는 함수
 # 따라서 제대로 확인할 수 있도록
 # CPU의 코드 실행을 잠시 멈춘다.
 cv2.waitKey(0)              # 키 입력을 받을 때까지 CPU를 붙잡는 함수
-cv2.destroyAllWindows()     # cv2가 실행한 모든 창을 닫는 함수
+cv2.destroyAllWindows()     # cv2가 실행한 '모든' 창을 닫는 함수
 
 # 새로운 창 띄우기
 cv2.imshow ('color', image)
 cv2.imshow ('gray scale', gray_image)
+
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()

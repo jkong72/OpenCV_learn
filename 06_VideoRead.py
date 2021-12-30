@@ -6,7 +6,7 @@ import numpy as np
 # 비디오 파일 읽기
 cap = cv2.VideoCapture('data/videos/chaplin.mp4')
 
-if cap.isOpened() == False:
+if cap.isOpened() == False: # 작동 실패시 오류 메시지 표시
     print ('파일을 여는데 실패했습니다.')
 else:
     # 동영상은 시간에 따른 사진의 집합이므로
